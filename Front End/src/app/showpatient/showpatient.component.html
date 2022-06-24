@@ -1,0 +1,34 @@
+<div class="main-container-size">
+  <div class="container table-height">
+   
+            <h4 style="text-align: center">All Patient List</h4>
+            <div class="table-wrapper">
+              <table class="fl-table">
+                <thead>
+                  <tr>
+                    <th>Patient Id</th>
+                    <th>Patient Name</th>
+                    <th>Date of Visit</th>
+                    <th>Visited Doctor</th>
+                    <th>Prescription</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let patient of patients">
+                    <td>{{ patient.patientId}}</td>
+                    <td>{{ patient.patientName }}</td>
+                    <td>{{ patient.dateOfVisit }}</td>
+                    <td>{{ patient.visitedDoctor }}</td>
+                    <td>{{ patient.precription }}</td>
+                     
+                  </tr>
+                </tbody>
+
+                <tbody></tbody>
+              </table>
+            </div>
+            
+          </div>
+          
+  </div>
